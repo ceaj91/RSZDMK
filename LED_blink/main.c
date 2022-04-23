@@ -15,3 +15,8 @@ _delay_ms ( low_time ) ; // Pauza 1 s
 }
 return 0;
 }
+
+void ledInit ()
+{
+DDRB |= 1 << 5; // PB5 je izlaz
+}
